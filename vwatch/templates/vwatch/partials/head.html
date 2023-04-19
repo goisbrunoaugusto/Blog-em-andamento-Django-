@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -125,7 +122,7 @@
             position: relative;
             max-width: 640px;
             margin: 0 auto;
-            box-shadow: 3px 4px var(--color-gray-4);
+            /* box-shadow: 3px 4px var(--color-gray-4); */
             transition: all 300ms ease-in-out;
         }
 
@@ -156,6 +153,7 @@
 
         .search-form:focus-within {
             border-color: var(--color-primary);
+            box-shadow: 3px 4px var(--color-gray-4);
         }
 
         .search-form:focus-within .search-button {
@@ -191,6 +189,8 @@
 
         .vwatch-list-event {
             max-width: 640px;
+            border-radius: 15px;
+            overflow: hidden;
         }
 
         .vwatch-list-event:hover {
@@ -217,10 +217,76 @@
 
         .vwatch-author-category a {
             color: var(--color-gray-4);
+            text-decoration: none;
         }
 
         .vwatch-author-category a:hover {
             color: var(--color-primary);
+        }
+
+        .vwatch-author-description {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .vwatch-see-more {
+            align-self: center;
+        }
+
+        .vwatch-see-more a {
+            text-decoration: none;
+            color: var(--color-gray-7);
+        }
+
+        .vwatch-see-more a:hover {
+            color: var(--color-primary);
+        }
+
+        .vwatch-people {
+            text-align: center;
+        }
+
+        .vwatch-meta-container {
+            display: flex;
+            flex-flow: row wrap;
+            background: var(--color-gray-1);
+            justify-content: space-evenly;
+            padding: 1rem;
+        }
+
+        .vwatch-main-footer {
+            background: var(--color-black);
+            padding: var(--spacing-gutter-large);
+            display: flex;
+            flex-flow: row wrap;
+            font-size: large;
+        }
+
+        .vwatch-main-footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .vwatch-my-name {
+            padding-right: 1rem;
+        }
+
+        .vwatch-main-footer-icons {
+            display: flex;
+            flex-flow: row wrap;
+            padding-left: 1rem;
+        }
+
+        .vwatch-main-footer-linkedin {
+            padding-right: 1rem;
+        }
+
+        .vwatch-main-footer-linkedin a:hover {
+            color: #0072b1;
+        }
+
+        .vwatch-main-footer-github a:hover {
+            color: orangered;
         }
     </style>
 </head>
