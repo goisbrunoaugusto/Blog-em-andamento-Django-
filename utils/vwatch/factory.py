@@ -14,7 +14,7 @@ def make_vwatch():
         'title': fake.sentence(nb_words=6),
         'description': fake.sentence(nb_words=12),
         'people': fake.random_number(digits=4, fix_len=True),
-        'event_description': fake.sentence(nb_words=3000),
+        'event_description': fake.sentence(nb_words=500),
         'created_at': fake.date_time(),
         'author': {
             'first_name': fake.first_name(),

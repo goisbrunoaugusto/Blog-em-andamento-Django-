@@ -8,11 +8,9 @@
     {% include 'vwatch/partials/search_bar.html' %}
     <main class="main-content-container">
         <div class="main-content main-content-list container">
-            {% include 'vwatch/partials/card.html' %}
-            {% include 'vwatch/partials/card.html' %}
-            {% include 'vwatch/partials/card.html' %}
-            {% include 'vwatch/partials/card.html' %}
-            {% include 'vwatch/partials/card.html' %}
+            {% for vwatch in vwatch %}
+                {% include 'vwatch/partials/card.html' %}
+            {% endfor %}
         </div>
     </main>
     {% include 'vwatch/partials/footer.html' %}

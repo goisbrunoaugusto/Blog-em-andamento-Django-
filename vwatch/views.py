@@ -10,5 +10,6 @@ def home(request):
 
 def evento(request, id):
     return render(request, 'vwatch/pages/evento.html', context={
-        'vwatch': [make_vwatch()],
+        'vwatch': [make_vwatch() for _ in range(5)],
+        'is_detail_page': True,
     })
